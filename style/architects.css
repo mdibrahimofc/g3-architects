@@ -15,11 +15,19 @@ bg-color{
 .dark-01{
     color: rgba(66, 66, 66, 1);
 }
-
+.dark-03{
+    color: rgba(114, 114, 114, 1);
+}
 .display-flex{
     display: flex;
 }
-
+.primary-btn{
+    background-color: rgba(255, 144, 14, 1);
+    padding: 1.25rem 1.5rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+}
 /* nav style */
 header{
     background-color: rgba(255, 144, 14, 0.1);
@@ -43,14 +51,47 @@ header{
     font-size: 2.8rem;
 }
 
+/* banner section */
+.banner{
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.banner p{
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+}
+.banner button{
+    margin-bottom: 50px;
+}
+.banner-image{
+    display: flex;
+    align-items: center;
+}
 
-
+.banner-image img{
+    margin: 0 auto;
+    max-width: 100%;
+}
 
 @media screen and (max-width: 576px) {
     .nav{
         flex-direction: column;
     }
-  }
+}
   
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    
+}
 
 
