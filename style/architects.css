@@ -5,6 +5,12 @@
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
 }
+*{
+    border: 1px solid red;
+}
+body{
+    border: 0.5px dashed aqua
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -61,12 +67,12 @@ header{
     justify-content: center;
     align-items: center;
 }
-.banner h1{
+.banner h1, .feature h1{
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 50px;
 }
-.banner p{
+.banner p, .feature p{
     line-height: 1.6rem;
     margin-bottom: 30px;
 }
@@ -83,11 +89,214 @@ header{
     max-width: 100%;
 }
 
+
+/* quick list section */
+.feutures{
+  gap: 7rem;
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feauture-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.feature h1{
+    font-size: 2.5rem;
+}
+.quick{
+    color: rgb(100, 96, 96);
+}
+.of{
+    color: black;
+}
+.f{
+    color: rgba(255, 144, 14, 1);;
+}
+.custon-btn{
+    font-size: 1.2rem;
+}
+
+/* feature section */
+.sister{
+    max-width: 90%;
+    margin: 6rem auto;
+    justify-content: space-between;
+}
+.sister-bio{
+    width: 36.625rem;
+}
+.sister-heading{
+    margin-bottom: 2rem;
+}
+.sister-heading h1{
+    color: #131313;
+font-size: 2.85rem;
+font-weight: 700;
+margin: 30px auto;
+border-left: 5px solid #FF900E;
+}
+.card{
+    padding: 2rem;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+margin-bottom: 1.25rem;
+}
+.card h1{
+color: #131313;
+font-size: 20px;
+font-weight: 600;
+margin-top: 2rem;
+margin-left: 2rem;
+}
+.card p{
+color: #727272;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.sister-image-container img{
+    border-radius: 8px;
+}
+.sister-image-container{
+    position: relative;
+}
+.sister-card{
+    border-radius: 8px;
+background: #FF900E;
+padding: 42px;
+/* width: 17rem;
+height: 7rem; */
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+left: -16%;
+bottom: -8%;
+}
+.sister-card h1{
+    color: #FFF;
+text-align: center;
+font-size: 4rem;
+font-weight: 700;
+line-height: 70px;
+}
+.sister-card p{
+    color: #FFF;
+font-size: 1.52rem;
+font-weight: 500;
+line-height: 40px;
+text-align: center;
+}
+/* facts section start */
+.fact h1{
+color: #131313;
+font-size: 45px;
+font-weight: 700;
+margin-bottom: 1.5rem;
+}
+.fact p{
+    color:#727272;
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px;
+}
+/* award sectiion start */
+.award-container{
+    margin: 6.5rem auto 11rem;
+    width: 90%;
+    display: flex;
+}
+.award h3{
+    color: #424242;
+font-family: "Work Sans";
+font-size: 45px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.award{
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.award p{
+    color: #727272;
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+
 @media screen and (max-width: 576px) {
     .nav{
         flex-direction: column;
+        width: 100%;
+    }
+    .nav-link ul{
+        flex-direction: column;
+    }
+    .feutures{
+        flex-direction: column;
+    }
+    .image-container{
+        grid-template-columns: 1fr;
+    }    
+    .sister{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sister-card{
+        width: 100%;
+    }
+    .image-container img, .sister-bio, .sister-image-container img{
+        width: 100%;
+    }
+    .sister-card{
+        border-radius: 3px;
+    background: #FF900E;
+    padding: 0px;
+    left: -16%;
+    bottom: -8%;
+    max-width: 10rem;
+    }
+    .sister-card h1{
+        color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 15px;
+    }
+    .sister-card p{
+        color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    }
+    .award-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
+
   
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
