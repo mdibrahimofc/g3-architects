@@ -241,8 +241,57 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
-
-
+/* sponsor section start */
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor h1{
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+.sponsor p{
+    color: var(--Dark-03, #727272);
+text-align: center;
+font-family: "Work Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+margin-bottom: 3rem;
+}
+/* logo section start */
+.logo{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+/* footer section start */
+footer{
+    width: 80%;
+    height: 6rem;
+    margin: 7rem auto;
+    border-radius: 8px;
+    background: #FFF4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: var(--Dark-02, #424242);
+text-align: center;
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+}
 
 @media screen and (max-width: 576px) {
     .nav{
@@ -291,6 +340,11 @@ line-height: normal;
     text-align: center;
     }
     .award-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .logo{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
